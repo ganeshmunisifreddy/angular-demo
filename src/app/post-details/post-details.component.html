@@ -1,0 +1,15 @@
+<p *ngIf="isLoading">Loading...</p>
+
+<div class="post-container" *ngIf="!isLoading">
+  <div class="post">
+    <h4>{{post.id}} - {{post.title}}</h4>
+    <p>By {{post.user.name}}</p>
+    <p>{{post.body}}</p>
+  </div>
+
+  <div class="pagination">
+    <button (click)="handleNav('prev')" [disabled]="currentId <= 1">Prev</button>
+    <button (click)="handleNav('next')">Next</button>
+  </div>
+
+</div>

@@ -1,0 +1,22 @@
+.posts {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.post {
+  background: #eee;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.post h4, .post p {
+  margin: 0;
+}
+
+.post:hover {
+  background: #ddd;
+}
